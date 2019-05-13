@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: linear-gradient(to right top, #051937, #512a59, #9c375c, #d15e45, #dc9c23)fixed;
+}
+
+.container{
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.data {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
