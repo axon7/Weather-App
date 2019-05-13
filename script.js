@@ -25,7 +25,10 @@ window.addEventListener('load', ()=>{
                     let shortSummary = document.querySelector('.summary').textContent = summary;
                 });
         });
+    }   else {
+        alert("geolocation not supported");
     } 
+
 });
 
 
