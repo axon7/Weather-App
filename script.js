@@ -1,6 +1,6 @@
 let latitude = 52.22977;
 let longitude = 21.01178;
-let urlAPI = `https://api.darksky.net/forecast/ecf36338ca3e63e62b57a1d409a3e9a7/${latitude},${longitude}`;
+let urlAPI = `https://api.darksky.net/forecast/ecf36338ca3e63e62b57a1d409a3e9a7/${latitude},${longitude}?lang=pl&units=ca`
 
 
 
@@ -19,10 +19,10 @@ window.addEventListener('load', ()=>{
                 })
                 .then(data=>{
                     console.log(data);
-                    const {temperature} = data.currently;
-                    const tempInC = ((Number(temperature) - 32)/1.8).toFixed(1);
-                    console.log(tempInC);
-                    let temperatureInC = document.querySelector(".temperatureInC").textContent = tempInC;
+                    const {temperature, summary} = data.currently;
+                    const temp = Number(temperature.toFixed(1)) + 2;
+                    let currentTemp = document.querySelector(".temperatureInC").textContent = temp;
+                    let shortSummary = document.querySelector('.summary').textContent = summary;
                 });
         });
     } 
@@ -31,6 +31,6 @@ window.addEventListener('load', ()=>{
 
 
 
-// console.log(urlAPI);
+console.log(urlAPI);
 
 
