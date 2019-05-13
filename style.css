@@ -9,6 +9,8 @@
 body {
     background: linear-gradient(to right top, #051937, #512a59, #9c375c, #d15e45, #dc9c23)fixed;
     height:100%;
+    background-repeat:no-repeat;
+
 }
 
 .container{
