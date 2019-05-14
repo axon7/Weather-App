@@ -8,7 +8,7 @@
 
 html {
     background: linear-gradient(to right top, #051937, #512a59, #9c375c, #d15e45, #dc9c23)fixed;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,13 +18,17 @@ html {
 
 }
 
-.container{
+#title {
+    margin-top: 20px;
+}
+
+.container {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
 .data {
@@ -35,6 +39,12 @@ html {
     flex-direction: column;
 }
 
-.temp{
+.temp {
     font-size: 110px;
+    margin-right: 50px;
+}
+
+.tempAndIcon {
+    display: flex;
+    flex-direction: row;
 }
