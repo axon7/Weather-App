@@ -3,10 +3,22 @@ let longitude = 21.01178;
 let urlAPI = `https://api.darksky.net/forecast/ecf36338ca3e63e62b57a1d409a3e9a7/${latitude},${longitude}?lang=pl&units=ca`
 
 
+function clock(){
+    let d = new Date();
+    hours = d.getHours();
+    minutes = d.getMinutes();
+    seconds = d.getSeconds();
 
+    let time = `${hours}:${minutes}:${seconds}`;
+    let clocko = document.querySelector(".clocko").innerHTML = time;
+}
+
+setInterval(clock, 1000);
 
 //default for Warsaw
 window.addEventListener('load', ()=>{
+    setInterval(clock, 1000);
+
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition((position)=> {
            latitude = position.coords.latitude;
@@ -25,9 +37,10 @@ window.addEventListener('load', ()=>{
                     let shortSummary = document.querySelector('.summary').textContent = summary;
                 });
         });
-    }   else {
-        alert("geolocation not supported");
-    } 
+    }   
+
+
+
 
 });
 

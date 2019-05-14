@@ -34,3 +34,7 @@ html {
     align-items: center;
     flex-direction: column;
 }
+
+.temp{
+    font-size: 110px;
+}
