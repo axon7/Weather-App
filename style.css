@@ -48,3 +48,16 @@ html {
     display: flex;
     flex-direction: row;
 }
+
+@media(max-width: 500px) {
+    .tempAndIcon {
+        flex-direction: column;
+    }
+
+    #icon1 {
+        max-width: 100px;
+        display: flex;
+        align-self: center;
+        margin-top: 40px;
+    }
+}
