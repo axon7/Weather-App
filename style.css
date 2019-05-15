@@ -18,8 +18,9 @@ html {
 
 }
 
-#title {
+.header {
     margin-top: 20px;
+    text-align: center;;
 }
 
 .container {
@@ -28,6 +29,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 2px solid white;
 
 }
 
@@ -37,21 +39,49 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .temp {
     font-size: 110px;
     margin-right: 50px;
+
 }
 
-.tempAndIcon {
+#icon{
+    
+}
+
+.currentTempAndIcon {
     display: flex;
     flex-direction: row;
 }
 
-@media(max-width: 500px) {
-    .tempAndIcon {
+.tempIconSum{
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    max-width: 900px;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.line-break{
+    width: 100%;
+}
+#hourlySummary{
+    text-align: center;
+}
+
+@media(max-width: 360px) {
+    .tempIconSum {
         flex-direction: column;
+        margin:50px;
+    }
+    .currentTempAndIcon {
+        display: flex;
+        flex-direction: row;
     }
 
     #icon1 {
