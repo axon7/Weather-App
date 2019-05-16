@@ -14,9 +14,10 @@ html {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
 
 }
+
+
 
 .header {
     margin-top: 20px;
@@ -29,8 +30,6 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid white;
-
 }
 
 .data {
@@ -90,4 +89,43 @@ html {
         align-self: center;
         margin-top: 40px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(156, 28, 28, 0.5);
 }

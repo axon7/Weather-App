@@ -1,5 +1,3 @@
-
-
 function clock() {
   let d = new Date();
   hours = d.getHours();
@@ -28,15 +26,15 @@ function setIcon(icon, iconID) {
 
 //default for Warsaw
 window.addEventListener("load", () => {
-  setInterval(clock, 1000);
+  // setInterval(clock, 1000);
   let latitude;
   let longitude;
 
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
-      latitude = position.coords.latitude;
-      longitude = position.coords.longitude;
+      latitude = position.coords.latitude.toFixed(6);
+      longitude = (position.coords.longitude).toFixed(6);
       console.log(latitude, longitude);
 
       let urlAPI = `https://api.darksky.net/forecast/ecf36338ca3e63e62b57a1d409a3e9a7/${latitude},${longitude}?lang=pl&units=ca`;
@@ -51,9 +49,18 @@ window.addEventListener("load", () => {
 
           const temp = Number(temperature.toFixed(1));
           let hourlySummary = document.querySelector("#hourlySummary").textContent = data.hourly.summary;
-          let currentTemp = (document.querySelector(".temperatureInC").textContent = temp);
-          let shortSummary = (document.querySelector(".summary").textContent = summary);
+          let currentTemp = document.querySelector(".temperatureInC").textContent = temp;
+          let shortSummary = document.querySelector(".summary").textContent = summary;
           let weekSummary = document.querySelector("#weekSummary").textContent = data.daily.summary;
+
+          let day1Summary = document.querySelector('#day1Summary').textContent = data.daily.data[2].summary;
+          let day1LowTemp = document.querySelector('#day1LowTemp').textContent = data.daily.data[2].temperatureLow;
+          let day1HighTemp = document.querySelector('#day1HighTemp').textContent = data.daily.data[2].temperatureHigh;
+
+
+
+
+
           setIcon(icon, document.querySelector("#icon1"));
         });
     });
