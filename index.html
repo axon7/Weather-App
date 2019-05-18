@@ -24,24 +24,47 @@
                     <p>Obecnie:</p>
                     <p class='temp'><span class="temperatureInC"></span>&degC</p>
                     <canvas id="icon1"></canvas>
-                    <div class="item line-break"></div>
+                    <div class='sunrise'>Wschód:<p id="sunriseTime"></p>
+                    </div>
+
+                    <div class="sunset">Zachód<p id="sunsetTime"></p>
+                    </div>
                     <p class='summary'></p>
                 </div>
                 <div id="hourlySummary"></div>
             </div>
-
+            <p><u>Prognoza na kolejne dni:</u></p>
+            <h3 id="weekSummary"></h3>
             <div class="forecast">
-                <p><u>Prognoza na kolejne dni:</u></p>
-                <h3 id="weekSummary"></h3>
 
 
-                <div class="day1">
+
+                <div class="forecast-item day1">
                     <span>jutro:</span>
                     <p id="day1Summary"></p>
+                    <canvas class="weekIcons" id="icon2"></canvas>
+                    <p>Tmin</p>
                     <p id="day1LowTemp"></p>
+                    <p>Tmax</p>
                     <p id="day1HighTemp"></p>
-
-
+                </div>
+                <div class="forecast-item day2">
+                    <span>pojutrze</span>
+                    <p id="day2Summary"></p>
+                    <canvas class="weekIcons" id="icon3"></canvas>
+                    <p>Tmin</p>
+                    <p id="day2LowTemp"></p>
+                    <p>Tmax</p>
+                    <p id="day2HighTemp"></p>
+                </div>
+                <div class="forecast-item  day3">
+                    <span>popojutrze :)</span>
+                    <p id="day3Summary"></p>
+                    <canvas class="weekIcons" id="icon4"></canvas>
+                    <p>Tmin</p>
+                    <p id="day3LowTemp"></p>
+                    <p>Tmax</p>
+                    <p id="day3HighTemp"></p>
                 </div>
 
             </div>
