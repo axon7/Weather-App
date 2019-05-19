@@ -19,18 +19,20 @@ html {
 
 
 
-.header {
-    margin-top: 20px;
-    text-align: center;;
-}
-
 .container {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     flex-direction: column;
 }
+
+.header {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+
 
 .data {
     margin-top: 20px;
@@ -38,22 +40,8 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-}
-
-.temp {
-    font-size: 110px;
-    margin-right: 50px;
-
-}
-
-#icon{
-    
-}
-
-.currentTempAndIcon {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    border: 1px solid grey;
 }
 
 .tempIconSum{
@@ -62,27 +50,66 @@ html {
     border-radius: 15px;
     padding: 20px;
     display: flex;
-    max-width: 900px;
-    flex-wrap: wrap;
-    margin: 50px;
+    margin: 10px;
+    border: 1px solid greenyellow;
+    width: 80%;
 }
-.line-break{
-    width: 100%;
+
+.currentTempAndIcon {
+    border: 1px solid blue;
 }
+
+.temp {
+    font-size: 75px;
+    padding: 5px;
+}
+
+#icon1{
+    max-width:200px;
+}
+
+#suntime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-content: space-around;
+    font-size: 14px;
+    margin: 10px;
+}
+
 #hourlySummary{
     text-align: center;
+    border: 1px solid red;
 }
+
+#weekSummary{
+    font-size: 17px;
+    text-align: center;
+}
+
 
 
 
 .forecast{
     display: flex;
     flex-direction: row;
+    border: 1px solid yellow;
+    width: 90%;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.weekIcons{
+    max-width:200px;
+    margin: 16px;
 }
 
 .forecast-item{
     background: rgba(0, 0, 0, 0.2);
-    width: 360px;;
+    width: 90%;
     opacity: 10px;
     border-radius: 15px;
     padding: 20px;
@@ -91,13 +118,20 @@ html {
     justify-content: center;
     flex-direction: column;
     display: flex;
-    
+    border: 1px solid red;    
 }
 
 
 
 
 
+
+@media(min-width: 415px){
+    .temp {
+        font-size: 120px;
+    }
+
+}
 
 
 

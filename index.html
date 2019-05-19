@@ -14,7 +14,7 @@
     <div class="container ">
         <div class="header">
             <h1 id="title">Weather App</h1>
-            <p class="madeWith"> with Dark Sky API</p>
+            <p class="madeWith">made with Dark Sky API</p>
             <p class="clocko"></p>
         </div>
 
@@ -22,34 +22,34 @@
             <div class="tempIconSum">
                 <div class="currentTempAndIcon">
                     <p>Obecnie:</p>
+                    <p class='summary'></p>
                     <p class='temp'><span class="temperatureInC"></span>&degC</p>
                     <canvas id="icon1"></canvas>
-                    <div class='sunrise'>Wschód:<p id="sunriseTime"></p>
+                    <div id="suntime">
+                        <div class='sunrise'>Wschód słońca:<p id="sunriseTime"></p>
+                        </div>
+                        <div class="sunset">Zachód słońca<p id="sunsetTime"></p>
+                        </div>
                     </div>
 
-                    <div class="sunset">Zachód<p id="sunsetTime"></p>
-                    </div>
-                    <p class='summary'></p>
+                    <div id="hourlySummary"></div>
+
                 </div>
-                <div id="hourlySummary"></div>
             </div>
             <p><u>Prognoza na kolejne dni:</u></p>
             <h3 id="weekSummary"></h3>
             <div class="forecast">
-
-
-
                 <div class="forecast-item day1">
-                    <span>jutro:</span>
+                    <span>Jutro:</span>
                     <p id="day1Summary"></p>
                     <canvas class="weekIcons" id="icon2"></canvas>
-                    <p>Tmin</p>
+                    <p>Tmin:</p>
                     <p id="day1LowTemp"></p>
-                    <p>Tmax</p>
-                    <p id="day1HighTemp"></p>
+                    <p>Tmax:</p>
+                    <p id="day1HighTemp"></p><span>&deg;C</span>
                 </div>
                 <div class="forecast-item day2">
-                    <span>pojutrze</span>
+                    <span>Pojutrze</span>
                     <p id="day2Summary"></p>
                     <canvas class="weekIcons" id="icon3"></canvas>
                     <p>Tmin</p>
@@ -58,7 +58,7 @@
                     <p id="day2HighTemp"></p>
                 </div>
                 <div class="forecast-item  day3">
-                    <span>popojutrze :)</span>
+                    <span>Popojutrze :)</span>
                     <p id="day3Summary"></p>
                     <canvas class="weekIcons" id="icon4"></canvas>
                     <p>Tmin</p>
