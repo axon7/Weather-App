@@ -92,8 +92,8 @@ window.addEventListener("load", () => {
 
           setIcon(icon, document.querySelector("#icon1"));
           setIcon(data.daily.data[2].icon, document.querySelector("#icon2"));
-          setIcon(icon, document.querySelector("#icon3"));
-          setIcon(icon, document.querySelector("#icon4"));
+          setIcon(data.daily.data[3].icon, document.querySelector("#icon3"));
+          setIcon(data.daily.data[4].icon, document.querySelector("#icon4"));
 
 
 
