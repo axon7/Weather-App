@@ -38,9 +38,9 @@ window.addEventListener("load", () => {
       longitude = (position.coords.longitude).toFixed(6);
       console.log(latitude, longitude);
 
-      // let urlAPI = `https://api.darksky.net/forecast/ecf36338ca3e63e62b57a1d409a3e9a7/${latitude},${longitude}?lang=pl&units=ca`;
+      let urlAPI = `https://api.darksky.net/forecast/ecf36338ca3e63e62b57a1d409a3e9a7/${latitude},${longitude}?lang=pl&units=ca`;
 
-      fetch('./data.json')
+      fetch('https://cors-anywhere.herokuapp.com/' + urlAPI)
         .then(res => {
           return res.json();
         })
