@@ -33,7 +33,9 @@ html {
     text-align: center; 
 }
 
-
+.nextdaysSummary{
+    text-align: center;
+}
 
 .data {
     margin-top: 20px;
