@@ -46,6 +46,7 @@ window.addEventListener("load", () => {
         })
         .then(data => {
           console.log(data);
+
           const { temperature, summary, icon } = data.currently;
 
           const temp = Number(temperature.toFixed(1));
@@ -72,6 +73,7 @@ window.addEventListener("load", () => {
 
           unixToTime(sunriseTimeUnix, '#sunriseTime');
           unixToTime(sunsetTimeUnix, '#sunsetTime');
+          setInterval(clock, 1000);
 
 
           let day1Summary = document.querySelector('#day1Summary').textContent = data.daily.data[2].summary;
