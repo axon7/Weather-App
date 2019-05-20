@@ -65,7 +65,10 @@ html {
     text-align:center;
 }
 
-
+.sunrise, .sunset{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 
 #suntime{
@@ -75,7 +78,7 @@ html {
     text-align: center;
     align-content: space-around;
     font-size: 14px;
-    margin: 10px;
+    margin: 20px;
 }
 
 #hourlySummary{
@@ -90,8 +93,8 @@ html {
 
 #icon1{
     width: 150px;
-    display:flex;
-    margin: 0 0 0 60px;
+    
+    margin: 0px 60px 0px 60px;
 }
 
 .forecast{
@@ -132,12 +135,12 @@ html {
     width: 90%;
 }
 
-@media(min-width: 415px){
+/* @media(min-width: 415px){
     .temp {
         font-size: 120px;
     }
 
-}
+} */
 
 
 
