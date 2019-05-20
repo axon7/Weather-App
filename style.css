@@ -25,6 +25,7 @@ html {
     align-items: center;
     justify-self: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .header {
@@ -41,7 +42,6 @@ html {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    border: 1px solid grey;
 }
 
 .tempIconSum{
@@ -51,22 +51,22 @@ html {
     padding: 20px;
     display: flex;
     margin: 10px;
-    border: 1px solid greenyellow;
     width: 80%;
+    justify-content: center;
 }
 
 .currentTempAndIcon {
-    border: 1px solid blue;
+    justify-content: center;
 }
 
 .temp {
     font-size: 75px;
     padding: 5px;
+    text-align:center;
 }
 
-#icon1{
-    max-width:200px;
-}
+
+
 
 #suntime{
     display: flex;
@@ -80,7 +80,6 @@ html {
 
 #hourlySummary{
     text-align: center;
-    border: 1px solid red;
 }
 
 #weekSummary{
@@ -89,12 +88,15 @@ html {
 }
 
 
-
+#icon1{
+    width: 150px;
+    display:flex;
+    margin: 0 0 0 60px;
+}
 
 .forecast{
     display: flex;
     flex-direction: row;
-    border: 1px solid yellow;
     width: 90%;
     align-content: center;
     flex-wrap: wrap;
@@ -103,7 +105,7 @@ html {
 }
 
 .weekIcons{
-    max-width:200px;
+    max-width:130px;
     margin: 16px;
 }
 
@@ -118,13 +120,17 @@ html {
     justify-content: center;
     flex-direction: column;
     display: flex;
-    border: 1px solid red;    
 }
 
 
 
 
-
+.forecast-item-temp{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 90%;
+}
 
 @media(min-width: 415px){
     .temp {
