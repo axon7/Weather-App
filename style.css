@@ -1,140 +1,142 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
 }
 
 html {
-    background: linear-gradient(to right top, #051937, #512a59, #9c375c, #d15e45, #dc9c23)fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-
+  background: linear-gradient(
+      to right top,
+      #051937,
+      #512a59,
+      #9c375c,
+      #d15e45,
+      #dc9c23
+    )
+    fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 
-
-
 .container {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    flex-direction: column;
-    overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .header {
-    margin-top: 20px;
-    text-align: center; 
+  margin-top: 20px;
+  text-align: center;
 }
 
-.nextdaysSummary{
-    text-align: center;
+.nextdaysSummary {
+  text-align: center;
 }
 
 .data {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
 }
 
-.tempIconSum{
-    background: rgba(0, 0, 0, 0.3);
-    opacity: 10px;
-    border-radius: 15px;
-    padding: 20px;
-    display: flex;
-    margin: 10px;
-    width: 80%;
-    justify-content: center;
+.tempIconSum {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 10px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  margin: 10px;
+  width: 80%;
+  justify-content: center;
 }
 
 .currentTempAndIcon {
-    justify-content: center;
+  justify-content: center;
 }
 
 .temp {
-    font-size: 75px;
-    padding: 5px;
-    text-align:center;
+  font-size: 75px;
+  padding: 5px;
+  text-align: center;
 }
 
-.sunrise, .sunset{
-    padding-left: 20px;
-    padding-right: 20px;
+.sunrise,
+.sunset {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-
-#suntime{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    align-content: space-around;
-    font-size: 14px;
-    margin: 20px;
+#suntime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-content: space-around;
+  font-size: 14px;
+  margin: 20px;
 }
 
-#hourlySummary{
-    text-align: center;
+#hourlySummary {
+  text-align: center;
 }
 
-#weekSummary{
-    font-size: 17px;
-    text-align: center;
+#weekSummary {
+  font-size: 17px;
+  text-align: center;
+  width: 80%;
 }
 
+#icon1 {
+  width: 150px;
 
-#icon1{
-    width: 150px;
-    
-    margin: 0px 60px 0px 60px;
+  margin: 0px 60px 0px 60px;
 }
 
-.forecast{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
+.forecast {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
 }
 
-.weekIcons{
-    max-width:130px;
-    margin: 16px;
+.weekIcons {
+  max-width: 130px;
+  margin: 16px;
 }
 
-.forecast-item{
-    background: rgba(0, 0, 0, 0.2);
-    width: 90%;
-    opacity: 10px;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
+.forecast-item {
+  background: rgba(0, 0, 0, 0.2);
+  width: 80%;
+  opacity: 10px;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 
-
-
-
-.forecast-item-temp{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 90%;
+.forecast-item-temp {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 50%;
 }
 
 /* @media(min-width: 415px){
@@ -144,38 +146,15 @@ html {
 
 } */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-::-webkit-scrollbar
-{
-  width: 12px;  /* for vertical scrollbars */
+::-webkit-scrollbar {
+  width: 12px; /* for vertical scrollbars */
   height: 12px; /* for horizontal scrollbars */
 }
 
-::-webkit-scrollbar-track
-{
+::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background: rgba(156, 28, 28, 0.5);
 }
