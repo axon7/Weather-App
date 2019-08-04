@@ -1,3 +1,6 @@
-first by using geolocation and using Dark Sky API
+# Weather app
+Geolocation weather application showing forecast from DarkSky API
 
-then add OpenWeather and search by name
+## Live demo
+
+https://axon7.github.io/weather-app/
