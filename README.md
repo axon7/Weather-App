@@ -1,7 +1,7 @@
 # Weather app
 Simple geolocation based weather application with forecast from DarkSky API
 
-Build with plain JavaScript and Skycons
+Built with plain JavaScript and Skycons
 
 ## Live demo
 
